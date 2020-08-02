@@ -433,7 +433,7 @@ create_panels <- function(panels, x.axis, y.axis) {
   }, panel = panels, x = x.axis, y = y.axis)
 }
 
-expansion <- function(scale, discrete = c(0, 0.6), continuous = c(0.05, 0)) {
+expansion <- function(scale, discrete = c(0, 0), continuous = c(0, 0)) {
   if (inherits(scale$expand, 'waiver')) {
     if (scale$is_discrete()) {
       discrete
